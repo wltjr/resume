@@ -28,8 +28,8 @@
 
     \setlist[itemize]{noitemsep, topsep=0pt, itemsep=-.1em}
 
-	\titleformat{\section}{\normalfont\bfseries\large\itshape}{\thesection}{0.5em}{\uline{#1}}
-	\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+	\titleformat{\section}{\normalfont\bfseries\large\itshape}{\thesection}{0.5em}{\underline{\makebox[\textwidth][l]{#1}}}
+	\titleformat{\subsection}{\normalfont\bfseries\normalsize}{\thesubsection}{0.5em}{{#1}}
 
     \titlespacing{\section}{0pt}{8pt plus 4pt minus 8pt}{4pt plus 2pt minus 8pt}
     \titlespacing{\subsection}{0pt}{12pt plus 4pt minus 4pt}{0pt plus 2pt minus 4pt}
@@ -95,7 +95,7 @@ debugging, \& maintaining
 \section*{Software}
 \begin{itemize}
   \item \textbf{asspr} – Anti-Spam Server Proxy Report written in C, creates a report on emails in ASSP's directories (\href{https://github.com/Obsidian-StudiosInc/asspr}{link})
-  \item \textbf{jem} – Java Environment Manager, a port of Gentoo's java-config written in C, used to configure the Java environment on Linux/Unix systems. (\href{https://github.com/Obsidian-StudiosInc/jem}{link})
+  \item \textbf{jem} – Java Environment Manager, C port of Gentoo's java-config, manage Java env on Linux/Unix systems. (\href{https://github.com/Obsidian-StudiosInc/jem}{link})
   \item \textbf{ecrire} – Graphical Text Editor built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/ecrire}{link})
   \item \textbf{entrance} – Display Manager built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/entrance}{link})
 \end{itemize}  
