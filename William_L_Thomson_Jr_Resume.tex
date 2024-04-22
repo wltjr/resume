@@ -11,6 +11,7 @@
 	\usepackage{multicol}
     \usepackage[explicit]{titlesec}
     \usepackage[tmargin=1in,bmargin=.5in,lmargin=.5in,rmargin=.5in]{geometry}
+    \usepackage{xcolor}
 
     \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=blue, }
 
@@ -23,12 +24,12 @@
     \pagestyle{fancy}
 
     \renewcommand\theadfont{\bfseries\small}
-    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\headrulewidth}{0pt} 
     \renewcommand{\footrulewidth}{0pt}
     \renewcommand{\headruleskip}{0pt}
 
-    \setlist[description]{noitemsep, topsep=0pt, itemsep=.1em}
-    \setlist[itemize]{noitemsep, topsep=0pt, itemsep=-.1em}
+    \setlist[description]{noitemsep, topsep=0pt, itemsep=.15em}
+    \setlist[itemize]{noitemsep, topsep=0pt, itemsep=.15em}
 
 	\titleformat{\section}{\normalfont\bfseries\large\itshape}{\thesection}{0.5em}{\underline{\makebox[\textwidth][l]{#1}}}
 	\titleformat{\subsection}{\normalfont\bfseries\normalsize}{\thesubsection}{0.5em}{{#1}}
@@ -40,28 +41,25 @@
 
 \setlength\parindent{0pt}
 
-\section*{Overview}
-\textbf{Software Expert}; 23 years’ of software development and engineering experience \newline
-\textbf{Linux Expert}; Multiple distributions across desktop, server, \& embedded \newline
-\textbf{Network Expert}; IPv4, IPv6, Routing, Switching, PXE, VLAN, \& VPN
-
+\section*{Objective}
+23 years’ of industry experience specializing in software development \& engineering, with Linux systems \& networking expertise, seeking a C/C++ software development opportunity working with AI and robotics.
 
 
 \section*{Technical Skills}
-\vspace{-1em}
+\vspace{-1.5em}
 \setlength{\columnsep}{-2em}
 \begin{multicols}{2}
 \begin{description}[style=multiline,leftmargin=6em]
   \item [Languages] C, C++, Python, Java, SQL, Bash, \\ JavaScript, XML/HTML, CSS, TeX
   \item [Build] Autotools, CMake, Meson, \\ Ant, Maven, Gradle
-  \item [Debug] adb, gdb, strace, valgrind
+  \item [Debug] gdb, strace, valgrind, adb
   \item [CI/CD] Github, Travis-CI, Shippable(acquired)
   \item [VC] Git, SVN, CVS
 \end{description}
 \columnbreak
 \begin{description}[style=multiline,leftmargin=10em]
   \item [Data Formats] Markdown, Yaml, JSON, XML, LaTeX
-  \item [Code Analysis] Sonar, Coverity, Codacy, gcov, scan-build
+  \item [Code Analysis] gcov, scan-build, Sonar, Coverity, Codacy
   \item [Operating Systems] Linux, Windows, Android, Cisco IOS
   \item [Cloud Computing] Akamai (Linode), Rackspace, AWS
   \item [Container/VM] Docker, Qemu, KVM, VirtualBox, Xen
@@ -71,10 +69,10 @@
 \end{multicols}
 
 \section*{Education}
-\vspace{-1em}
+\vspace{-1.5em}
 \setlength{\columnsep}{-2em}
 \begin{multicols}{2}
-\textbf{University of North Florida, Jacksonville, FL} \newline
+\textbf{University of North Florida} | Jacksonville, FL \newline
 Bachelor of Science in Computer Science, 2022, GPA 4.0 \newline
 Dean's list for 5 semesters, \textit{summa cum laude} \newline
 Phi Kappa Phi Honor Society \newline
@@ -82,7 +80,7 @@ Osprey Competitive Programming Club O(CP) \newline
 \href{https://open.kattis.com/universities/unf.edu}{\#4} at UNF on Kattis at time of graduation (248.4 pts)
 \columnbreak
 
-\textbf{Florida State College at Jacksonville, Jacksonville, FL} \newline
+\textbf{Florida State College at Jacksonville} | Jacksonville, FL \newline
 Associate of Science in Computer IT, 2020, GPA 4.0 \newline
 Associate of Arts in Arts, 2020, GPA 4.0 \newline
 Technical Certificate IT Analysis \& Support, 2019, GPA 4.0 \newline
@@ -101,25 +99,25 @@ Phi Theta Kappa Honor Society
 \textbf{Obsidian-Studios, Inc. – Jacksonville, FL/ Petaluma, CA} – 2000 to 2023\newline
 \textbf{Developer, Systems Administrator, \& Owner}
 \begin{itemize}
-  \item Custom information system to efficiently manage numerous accounts at major financial institutions
-  \item Custom applications and information systems for efficient business operation across a variety of industries
-  \item Java framework \& API for RAD of database driven applications desktop (GUI/Swing) \& web (Servlet/Restlet/AJAX)
-  \item Touchscreen POS (Java, C, Linux) with ID age verification via USB magnetic card readers \& USB cash drawers
+  \item Software development pipeline, build, test, \& production environments; IDE $\rightarrow$ VC $\rightarrow$ CI $\rightarrow$ CD
+  \item Developed tooling to maintain over a thousands software packages by a single individual
+  \item Refactored \& ported software; e.g. Python $\rightarrow$ C, Perl $\rightarrow$ Java, Bash $\rightarrow$ C
+  \item Framework \& API for RAD of database driven applications
+  \item Information system to manage numerous accounts at major financial institutions
+  \item Applications \& information systems for business operation across a variety of industries
+  \item Touchscreen POS system with ID verification via USB magnetic card readers \& cash drawers
   \item Rapid scalable diskless cloud hosting environment using libVirt \& KVM (2nd gen), Xen(1st gen)
 
-  \item Integrated software development pipeline, build, test, and production environments; IDE $\rightarrow$ VC $\rightarrow$ CI $\rightarrow$ CD
-  \item Developed tooling to maintain over a thousands software packages by a single individual
-  \item Refactored and ported software; e.g. Python $\rightarrow$ C, Perl $\rightarrow$ Java, Bash $\rightarrow$ C
 \end{itemize}
 
 \section*{Software}
-\begin{itemize}
-  \item \textbf{osprey\_ros} – Implementation of ROS 2 Iron for University of North Florida robotics development (\href{https://github.com/Osprey-Robotics/osprey_ros}{link})
-  \item \textbf{asspr} – Anti-Spam Server Proxy Report written in C, creates a report on emails in ASSP's directories (\href{https://github.com/Obsidian-StudiosInc/asspr}{link})
-  \item \textbf{jem} – Java Environment Manager, C port of Gentoo's java-config, manage Java env on Linux/Unix systems. (\href{https://github.com/Obsidian-StudiosInc/jem}{link})
-  \item \textbf{ecrire} – Graphical Text Editor built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/ecrire}{link})
-  \item \textbf{entrance} – Display Manager built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/entrance}{link})
-\end{itemize}
+\begin{description}[style=multiline,leftmargin=7em]
+  \item [osprey\_ros] Implementation of ROS 2 Iron in C++ for University of North Florida robotics development (\href{https://github.com/Osprey-Robotics/osprey_ros}{link})
+  \item [entrance] Display Manager in C built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/entrance}{link})
+  \item [ecrire] Graphical Text Editor in C built on the Enlightenment Foundation Libraries (EFL). (\href{https://github.com/Obsidian-StudiosInc/ecrire}{link})
+  \item [jem] Java Environment Manager, C port of Gentoo's java-config, manage Java env on Linux/Unix systems. (\href{https://github.com/Obsidian-StudiosInc/jem}{link})
+  \item [asspr] Anti-Spam Server Proxy Report written in C, creates a report on emails in ASSP's directories (\href{https://github.com/Obsidian-StudiosInc/asspr}{link})
+\end{description}
 
 \section*{Public Presentations}
 \begin{itemize}
